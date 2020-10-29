@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const Wins = () => {
   const tally = useSelector(state => state.tally);
   return (
-    <p styles={{'margin-left': '5px'}}>{`With ${tally.wins} Wins`}</p>
+    <p style={{'margin-left': '5px',"fontSize": "30px"}}>{`Wins: ${tally.wins}`}</p>
   )
 }
 

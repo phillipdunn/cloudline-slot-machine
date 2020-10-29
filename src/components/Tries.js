@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const Tries = () => {
   const tally = useSelector(state => state.tally);
   return (
-  <p>{`You've had ${tally.tries} Tries`}</p>
+  <p style={{"fontSize": "30px"}}>{`Tries: ${tally.tries}`}</p>
   )
 }
 
