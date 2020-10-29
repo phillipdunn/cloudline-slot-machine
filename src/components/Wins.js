@@ -4,9 +4,11 @@ import { useSelector } from "react-redux";
 // TASK
 // Display the number of wins, i.e 'You've won x times'
 
-function Wins() {
+const Wins = () => {
   const tally = useSelector(state => state.tally);
-  return "wins";
+  return (
+    <p styles={{'margin-left': '5px'}}>{`With ${tally.wins} Wins`}</p>
+  )
 }
 
 export default Wins;
